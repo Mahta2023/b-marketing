@@ -1,0 +1,194 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/IRANSansWeb\(FaNum\)_Medium.woff2');
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url('../fonts/Vazir-Black-FD.woff');
+    src: url('../fonts/Vazir-Thin.woff') format('woff'),
+        url('../fonts/Vazir-Medium.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    direction: rtl;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* top part */
+.top-part {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.top-part .logo-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 15px;
+}
+
+.top-part .logo {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    border: 2px solid rgb(233, 232, 232);
+}
+
+.top-part .logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.top-part .title h1 {
+    font-family: "IRANSans";
+    font-size: 1.4rem;
+}
+
+.top-part .row .para {
+    display: flex;
+    text-align: right;
+}
+
+.top-part .row p {
+    font-family: 'vazir';
+    font-size: 1rem;
+    margin-top: 2rem;
+}
+
+/* middle part */
+.middle-part {
+    margin-bottom: 2rem;
+}
+
+.middle-contact {
+    width: 80%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(74, 127, 241);
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 0 auto;
+    cursor: pointer;
+    background-color: rgb(60, 141, 188);
+}
+
+.middle-contact .contact {
+    width: 80%;
+    height: 100%;
+}
+
+.middle-contact .contact .btn {
+    width: 90%;
+    font-size: 15px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 15px;
+}
+
+.middle-contact .call-icon {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: #fff;
+}
+
+.middle-pacontactrt .call-icon i {
+    width: 100%;
+}
+
+/* bottom part */
+.bottom-part {
+    padding: 0 10px;
+}
+
+.bottom-part .image,
+.bottom-part .video {
+    width: 110px;
+    height: 130px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+.bottom-part .row .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bottom-part .row .video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* responsive design */
+
+@media screen and (min-width:600px) {
+    .middle-contact {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .middle-contact {
+        width: 30%;
+    }
+
+    .bottom-part .image,
+    .bottom-part .video {
+        width: 110px;
+        height: 170px;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .middle-contact {
+        width: 23%;
+    }
+
+    .bottom-part .image,
+    .bottom-part .video {
+        width: 110px;
+        height: 250px;
+    }
+}
